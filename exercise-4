@@ -1,0 +1,11 @@
+list = []
+tuple = ()
+
+numbers = str(input("Enter a sequence of comma-separated numbers: "))
+numbers = numbers.split(",")
+for i in numbers:
+    list.append(i)
+    tuple = tuple + (i,)
+
+print(list)
+print(tuple)
