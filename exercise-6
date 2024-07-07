@@ -1,0 +1,18 @@
+import math
+C = 50
+H = 30
+
+def formula(D):
+    Q = math.sqrt((2 * C * D)/H)
+    return Q
+
+numbers = input(str("Enter numbers separated by a comma: "))
+numbers_list = numbers.split(",")
+
+results = []
+for number in numbers_list:
+    number = int(number)
+    result = round(formula(number))
+    results.append(str(result))
+
+print(",".join(results))
