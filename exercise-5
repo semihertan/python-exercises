@@ -1,0 +1,13 @@
+class myClass:
+    def __init__(self, string):
+        self.string = string
+
+    def getString(self):
+        self.string = input("enter a string: ")
+
+    def printString(self):
+        print(self.string.upper())
+
+test = myClass("TEST STRING")
+test.getString()
+test.printString()
