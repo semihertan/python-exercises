@@ -1,0 +1,13 @@
+total = 0
+trans = input()
+
+trans_list = trans.split(" ")
+
+for i in range(0, len(trans_list), 2):
+
+    if trans_list[i] == "D":
+        total += int(trans_list[i+1])
+    elif trans_list[i] == "W":
+        total -= int(trans_list[i+1])
+
+print(total)
